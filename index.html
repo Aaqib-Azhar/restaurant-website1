@@ -16,7 +16,7 @@
     header {
       background: linear-gradient(135deg, #8b0000, #b22222);
       color: white;
-      padding: 25px 15px;
+      padding: 30px 15px;
     }
 
     header img {
@@ -30,19 +30,19 @@
     }
 
     section {
-      padding: 30px 15px;
+      padding: 40px 15px;
     }
 
     h2 {
-      margin-bottom: 20px;
       color: #8b0000;
+      margin-bottom: 25px;
     }
 
     .menu {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 20px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
 
@@ -63,8 +63,10 @@
       border-radius: 10px;
     }
 
-    .item h3 {
-      margin: 10px 0 0;
+    .price {
+      color: #25a244;
+      font-weight: bold;
+      margin-top: 5px;
     }
 
     .order-btn {
@@ -72,7 +74,7 @@
       margin: 30px auto;
       background: #25d366;
       color: white;
-      padding: 15px 30px;
+      padding: 15px 35px;
       border-radius: 30px;
       font-size: 18px;
       text-decoration: none;
@@ -83,70 +85,109 @@
       background: #1ebd5a;
     }
 
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 1000px;
+      height: 300px;
+      border: 0;
+      border-radius: 10px;
+    }
+
     footer {
       background: #222;
       color: white;
-      padding: 20px 10px;
+      padding: 25px 10px;
     }
 
     footer a {
       color: #4da6ff;
       text-decoration: none;
-      margin: 0 8px;
+      margin: 0 10px;
       font-weight: bold;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <img src="images/logo.png" alt="Restaurant Logo">
-    <h1>My Restaurant</h1>
-    <p class="tagline">Delicious food made with love</p>
-  </header>
+<header>
+  <img src="images/logo.png" alt="Restaurant Logo">
+  <h1>My Restaurant</h1>
+  <p class="tagline">Delicious food made with love</p>
+</header>
 
-  <section>
-    <h2>Our Special Menu</h2>
+<section>
+  <h2>Our Special Menu</h2>
 
-    <div class="menu">
-      <div class="item">
-        <img src="images/pizza.jpg" alt="Pizza">
-        <h3>Pizza</h3>
-      </div>
-
-      <div class="item">
-        <img src="images/salad.jpg" alt="Salad">
-        <h3>Salad</h3>
-      </div>
-
-      <div class="item">
-        <img src="images/soup.jpg" alt="Soup">
-        <h3>Soup</h3>
-      </div>
-
-      <div class="item">
-        <img src="images/cake.jpg" alt="Cake">
-        <h3>Cake</h3>
-      </div>
+  <div class="menu">
+    <div class="item">
+      <img src="images/pizza.jpg">
+      <h3>Pizza</h3>
+      <p class="price">₹299</p>
     </div>
 
-    <a class="order-btn" href="https://wa.me/919999999999" target="_blank">
-      Order on WhatsApp
-    </a>
-  </section>
+    <div class="item">
+      <img src="images/salad.jpg">
+      <h3>Salad</h3>
+      <p class="price">₹199</p>
+    </div>
 
-  <footer>
-    <p>
-      Follow us on
-      <a href="https://www.instagram.com" target="_blank">Instagram</a> |
-      <a href="https://www.facebook.com" target="_blank">Facebook</a>
-    </p>
-  </footer>
+    <div class="item">
+      <img src="images/soup.jpg">
+      <h3>Soup</h3>
+      <p class="price">₹149</p>
+    </div>
+
+    <div class="item">
+      <img src="images/cake.jpg">
+      <h3>Cake</h3>
+      <p class="price">₹249</p>
+    </div>
+  </div>
+
+  <a class="order-btn" href="https://wa.me/919999999999" target="_blank">
+    Order on WhatsApp
+  </a>
+</section>
+
+<section>
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="images/pizza.jpg">
+    <img src="images/salad.jpg">
+    <img src="images/soup.jpg">
+    <img src="images/cake.jpg">
+  </div>
+</section>
+
+<section>
+  <h2>Find Us</h2>
+  <iframe 
+    src="https://www.google.com/maps?q=restaurant%20near%20me&output=embed">
+  </iframe>
+</section>
+
+<footer>
+  <p>
+    Follow us on
+    <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+  </p>
+  <p style="font-size:12px;">Website template © You</p>
+</footer>
 
 </body>
 </html>
