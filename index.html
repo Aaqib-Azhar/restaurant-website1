@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Restaurant</title>
+  <title>The Sweet Dish</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -27,6 +27,22 @@
     .tagline {
       color: #ffdede;
       font-size: 14px;
+    }
+
+    nav {
+      background: #b22222;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     section {
@@ -118,47 +134,58 @@
       margin: 0 10px;
       font-weight: bold;
     }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 
 <body>
 
 <header>
-  <img src="images/logo.png" alt="Restaurant Logo">
-  <h1>My Restaurant</h1>
+  <img src="images/logo.png" alt="The Sweet Dish Logo">
+  <h1>The Sweet Dish</h1>
   <p class="tagline">Delicious food made with love</p>
 </header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
 <section>
   <h2>Our Special Menu</h2>
 
   <div class="menu">
     <div class="item">
-      <img src="images/pizza.jpg">
+      <img src="images/pizza.jpg" alt="Pizza">
       <h3>Pizza</h3>
       <p class="price">₹299</p>
     </div>
 
     <div class="item">
-      <img src="images/salad.jpg">
+      <img src="images/salad.jpg" alt="Salad">
       <h3>Salad</h3>
       <p class="price">₹199</p>
     </div>
 
     <div class="item">
-      <img src="images/soup.jpg">
+      <img src="images/soup.jpg" alt="Soup">
       <h3>Soup</h3>
       <p class="price">₹149</p>
     </div>
 
     <div class="item">
-      <img src="images/cake.jpg">
+      <img src="images/cake.jpg" alt="Cake">
       <h3>Cake</h3>
       <p class="price">₹249</p>
     </div>
   </div>
 
-  <a class="order-btn" href="https://wa.me/919999999999" target="_blank">
+  <a class="order-btn" href="https://wa.me/917889378573" target="_blank">
     Order on WhatsApp
   </a>
 </section>
@@ -166,24 +193,24 @@
 <section>
   <h2>Gallery</h2>
   <div class="gallery">
-    <img src="images/pizza.jpg">
-    <img src="images/salad.jpg">
-    <img src="images/soup.jpg">
-    <img src="images/cake.jpg">
+    <img src="images/pizza.jpg" alt="Pizza">
+    <img src="images/salad.jpg" alt="Salad">
+    <img src="images/soup.jpg" alt="Soup">
+    <img src="images/cake.jpg" alt="Cake">
   </div>
 </section>
 
 <section>
   <h2>Find Us</h2>
   <iframe 
-    src="https://www.google.com/maps?q=restaurant%20near%20me&output=embed">
+    src="https://www.google.com/maps?q=Basavanpura,+GotTIGiri,+Bengaluru+560083&output=embed">
   </iframe>
 </section>
 
 <footer>
   <p>
-    Follow us on
-    <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+    Follow us on 
+    <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
     <a href="https://www.facebook.com" target="_blank">Facebook</a>
   </p>
   <p style="font-size:12px;">Website template © You</p>
